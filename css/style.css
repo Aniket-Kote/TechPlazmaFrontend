@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2");
+:root {
+  --font-heading: "Tajawal", sans-serif;
+  --font-content: "Manrope", sans-serif;
+}
+::selection {
+  background: #6b96d1;
+  color: aliceblue;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6b96d1;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3e7fda;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: auto;
+  flex-direction: column;
+  width: 100%;
+}
+section {
+  /* margin: 5% auto; */
+  width: 90%;
+}
+.aboutSection,
+.servicesSection,.contactSections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5% auto;
+}
+.sectiontitle {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+.error{
+  color: red;
+  font-style: italic;
+  font-weight:700;
+  margin:3% auto;
+}
+.sectionContent {
+  font-family: var(--font-content);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.divider {
+  width: 40%;
+  border: 2px solid #507dbc;
+}
+img.techplazmaLogo {
+  width: 20%;
+  margin-left: 5%;
+}
+
+/* Hero start */
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding:5% auto; */
+  width: inherit;
+  padding: 5%;
+  background-color: #507dbc;
+  border-radius: 0 0 0 200px;
+  margin-left: 6%;
+}
+.heroSection .heroContentData {
+  width: 100%;
+  margin: auto 5%;
+}
+.heroSection .heroTitle {
+  width: 100%;
+}
+
+.heroSection .heroContent {
+  margin-top: 15%;
+  width: 90%;
+}
+
+.heroSection img.HeroIllus {
+  width: 40%;
+  margin: auto 5%;
+}
+/* Hero end */
+
+/* about start */
+
+.aboutSection .aboutSection_data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.aboutSection .aboutSection_data .aboutIllus {
+  width: 40%;
+}
+
+.aboutSection .aboutSection_data .aboutcontent {
+  width: 50%;
+}
+/* about end */
+
+.cardbg-web {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../images/Web.jpg");
+}
+.cardbg-UiUx {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../images/UiUx.jpg");
+}
+.cardbg-Maintain {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../images/Maintainance.jpg");
+}
+.cardbg-Digital {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../images/DigitalBranding.jpg");
+}
+.cardbg-Android {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../images/Android.jpg");
+}
+.cardbg-Social {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../images/Social.jpg");
+}
+.cardbg-DataEntry {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../images/DataEntry.jpg");
+}
+/* Services start */
+.card {
+  width: 20%;
+  height: 250px;
+  margin: 2.5% 2.5%;
+  background-size: cover;
+  border: 0;
+  box-shadow: 3px 5px 10px rgba(128, 128, 128, 0.637);
+}
+.card .card-body .cardTitle {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  margin: 70% auto;
+}
+
+.cardTitle p {
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.card-groups {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 90%; */
+  justify-content: center;
+  align-items: center;
+}
+/* Services ends */
+
+/* footer */
+footer {
+  margin-top: auto;
+  border-top: 1px solid #3e7fda;
+}
+footer ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .footer-comp {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+footer .footer-main {
+  display: flex;
+  flex-direction: row;
+  margin: 2% auto;
+  width: 100%;
+}
+footer .footer-main .footer-comp .footer-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+footer .footer-main .footer-comp {
+  margin-top: 0;
+  width: 15%;
+}
+footer img.techplazmaLogofooter {
+  margin: 5% auto 1% 3%;
+  width: 20%;
+}
+
+.social-media {
+  font-size: 2em;
+}
+.footer-content a {
+  color: black;
+}
+
+footer .copyrightSection{
+  text-align: center;
+}
+/* footer ends */
+
+/* contact */
+.contactSections .contactSection_data form input.contactInput{
+background-color: #DAE3E5;
+border: 0;
+padding:0.75em;
+width: 90%;
+}
+.contactSections .contactSection_data{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.contactSections .contactSection_data .contactcontent form{
+  width: 50vw;
+}
+
+.contactSections .contactSection_data .contactcontent form label{
+  margin: 2.5% auto 1% auto;
+}
+
+.contactSections .contactSection_data .contactcontent form .submitbtn{
+  margin: 4% auto 1% auto;
+  padding:0.75em 3em;
+ 
+  
+  font-size: 1.2em;
+}
+.contactSections .contactSection_data img.contactIllus{
+  width: 40%;
+}
+/* contact ends */
